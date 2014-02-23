@@ -13,27 +13,27 @@ Everything else in the root directory is the compiled output of _harp. These are
 
 # Install
 
-## Install `harp`
+## Install harp
 
-http://harpjs.com/docs/environment/install
+harp docs: http://harpjs.com/docs/environment/install
 
 
 # Develop
 
-## Run the `harp` server
+## Run the harp server
 
 ```
-sudo harp server ~/dev/polyglotconf.harp/_harp -p 80
+sudo harp server _harp -p 80
 ```
 
 ## Do work
 
-Modify source files in `_harp/`
+Modify source files in _harp/
 
 
 # Deploy
 
-http://harpjs.com/docs/deployment/github-pages
+harp docs: http://harpjs.com/docs/deployment/github-pages
 
 ## Compile
 
