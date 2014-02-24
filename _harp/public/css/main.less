@@ -2,7 +2,7 @@
 
 @plgtl-color-primary: rgb(60, 174, 214);
 @plgtl-color-primary-light: lighten(@plgtl-color-primary, 15%);
-@plgtl-color-primary-lighter: lighten(@plgtl-color-primary, 30%);
+@plgtl-color-primary-lighter: lighten(@plgtl-color-primary, 40%);
 @plgtl-color-primary-dark: darken(@plgtl-color-primary, 15%);
 
 html, body {
@@ -30,7 +30,7 @@ h2 {
   &.navbar-default .navbar-nav>.active>a,
   &.navbar-default .navbar-nav>.active>a:hover,
   &.navbar-default .navbar-nav>.active>a:focus {
-//    background-color: @plgtl-color-primary-lighter;
+    background-color: @plgtl-color-primary-lighter;
   }
   .navbar-nav > li {
     float: none;
@@ -42,7 +42,7 @@ h2 {
   height: 90%;
   min-height: 90%;
 
-  background: url(http://polyglotconf.github.io/assets/images/cover.jpg) 50% 0 fixed;
+  background: url(../images/cover.jpg) 50% 0 fixed;
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -115,9 +115,42 @@ h2 {
   margin-right: 5px;
 }
 
+.plglt-community {
+  .plglt-community-twitter {
+    .plglt-community-twitter-account {
+      text-align: center;
+    }
+    .plglt-community-twitter-hashtag {
+      text-align: center;
+    }
+    .plglt-community-meetup {
+      >img {
+        display: inline-block;
+      }
+    }
+  }
+}
 
+.plglt-outro {
+  background-color: @navbar-default-bg;
+}
 
+.plglt-links {
+  text-align: center;
+  margin-top: 3em;
+  padding-top: 2em;
+}
 
+.plglt-footer {
+  text-align: center;
+  padding-top: 3em;
+
+  .plgtl-footer-outro-logo {
+    margin: 1em 0 2em 0;
+    width: 30px;
+    height: 30px;
+  }
+}
 
 
 
