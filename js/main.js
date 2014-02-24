@@ -28,7 +28,7 @@ $(function() {
         $(window).resize(function() {
             refreshScrollSpy();
         });
-        
+
         $(window).load(function() {
             refreshScrollSpy();
         })
