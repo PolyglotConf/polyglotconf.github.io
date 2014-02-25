@@ -11,6 +11,12 @@ $(function() {
 
     var initMenuScrollSpy = function() {
         var calculateOffset = $('.plglt-nav').height()*1.5
+        var refreshScrollSpy = function() {
+            var data = $('body').data('bs.scrollspy');
+            data.options.offset = calculateOffset
+            $('body').data('bs.scrollspy', data);
+            $('body').scrollspy('refresh');
+        };
 
         $('body').scrollspy({ target: '.plglt-nav', offset: calculateOffset})
 
@@ -20,11 +26,12 @@ $(function() {
         });
 
         $(window).resize(function() {
-            var data = $('body').data('bs.scrollspy');
-            data.options.offset = calculateOffset
-            $('body').data('bs.scrollspy', data);
-            $('body').scrollspy('refresh')
+            refreshScrollSpy();
         });
+
+        $(window).load(function() {
+            refreshScrollSpy();
+        })
     };
 
     var initParallax = function() {

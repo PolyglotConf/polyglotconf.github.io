@@ -1,8 +1,9 @@
 @import "_bootstrap/bootstrap";
 
-  .plglt-nav .navbar-nav>li {
-    float: none;
-  }
+@plgtl-color-primary: rgb(60, 174, 214);
+@plgtl-color-primary-light: lighten(@plgtl-color-primary, 15%);
+@plgtl-color-primary-lighter: lighten(@plgtl-color-primary, 40%);
+@plgtl-color-primary-dark: darken(@plgtl-color-primary, 15%);
 
 html, body {
   height: 100%;
@@ -15,19 +16,35 @@ h1, h2 {
   font-weight: 700;
 }
 
+h1 {
+  color: @plgtl-color-primary;
+}
+
+h2 {
+  font-size: 27px;
+}
+
+.plglt-nav {
+  display: relative;
+  z-index: 2;
+  &.navbar-default .navbar-nav>.active>a,
+  &.navbar-default .navbar-nav>.active>a:hover,
+  &.navbar-default .navbar-nav>.active>a:focus {
+    background-color: @plgtl-color-primary-lighter;
+  }
+  .navbar-nav > li {
+    float: none;
+  }
+}
+
 .plglt-index-intro {
 
   height: 90%;
   min-height: 90%;
 
-  background: url(http://polyglotconf.github.io/assets/images/cover.jpg) 50% 0 fixed;
+  background: url(../images/cover.jpg) 50% 0 fixed;
   background-repeat: no-repeat;
   background-size: cover;
-
-//  margin: 0 auto;
-//  width: 100%;
-//  position: relative;
-//  box-shadow: 0 0 50px rgba(0,0,0,0.8);
 
   color: #fff;
   text-align: center;
@@ -47,24 +64,13 @@ h1, h2 {
     font-size: 300%;
   }
   h2 {
-    font-size:250%;
+    font-size: 250%;
   }
-  h1,h2 {
-    text-shadow: 0 1px 0 #ccc,
-    0 2px 0 #c9c9c9,
-    0 3px 0 #000,
-    0 4px 0 #000,
-    0 5px 0 #000,
-    0 6px 1px rgba(0,0,0,.3),
-    0 0 5px rgba(0,0,0,.3),
-    0 1px 3px rgba(0,0,0,.9),
-    0 3px 5px rgba(0,0,0,.6),
-    0 5px 10px rgba(0,0,0,.75),
-    0 10px 10px rgba(0,0,0,.6),
-    0 20px 20px rgba(0,0,0,.45);
+  h1, h2 {
+    color: #fff;
+    text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #000, 0 4px 0 #000, 0 5px 0 #000, 0 6px 1px rgba(0, 0, 0, .3), 0 0 5px rgba(0, 0, 0, .3), 0 1px 3px rgba(0, 0, 0, .9), 0 3px 5px rgba(0, 0, 0, .6), 0 5px 10px rgba(0, 0, 0, .75), 0 10px 10px rgba(0, 0, 0, .6), 0 20px 20px rgba(0, 0, 0, .45);
   }
 }
-
 
 .plglt-nav {
   .navbar-collapse {
@@ -79,14 +85,72 @@ h1, h2 {
 }
 
 .plglt-section {
-  .container>h1 {
+  .container > h1 {
     padding-top: 55px;
   }
 }
 
+.plglt-schedule {
+  .plglt-schedule-calendar {
+    text-align: center;
+  }
+  .plglt-schedule-heading {
+    padding-bottom: 1em;
+  }
+  .plglt-schedule-title{
+    display: block;
+  }
+}
 
+.plglt-participants {
+  .plglt-participants-lanyrdattendeelist {
+    padding-bottom: 1.5em;
+  }
+}
 
+.glyphicon-lanyrd {
+  background-image: url(//s3.amazonaws.com/lanyrd-static-hosting/img/icons/flatset/lanyrd-32x32.d33f655e.png);
+  background-size: 16px;
+  min-height: 16px;
+  margin-right: 5px;
+}
 
+.plglt-community {
+  .plglt-community-twitter {
+    .plglt-community-twitter-account {
+      text-align: center;
+    }
+    .plglt-community-twitter-hashtag {
+      text-align: center;
+    }
+    .plglt-community-meetup {
+      >img {
+        display: inline-block;
+      }
+    }
+  }
+}
+
+.plglt-outro {
+  background-color: @navbar-default-bg;
+}
+
+.plglt-links {
+  text-align: center;
+  margin-top: 3em;
+  padding-top: 2em;
+}
+
+.plglt-footer {
+  text-align: center;
+  padding-top: 3em;
+
+  .plgtl-footer-outro-logo {
+    margin: 1em 0 2em 0;
+    width: 30px;
+    height: 30px;
+  }
+}
 
 
 
