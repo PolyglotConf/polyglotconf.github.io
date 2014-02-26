@@ -50,7 +50,18 @@ $(function() {
         });
     };
 
-    initMenuAffix();
-    initMenuScrollSpy();
-    initParallax();
+    enquire.register("screen and (min-width: 992px)", function() {
+        initParallax();
+    });
+
+    enquire.register("screen and (min-width: 768px)", function() {
+        initMenuAffix();
+        initMenuScrollSpy();
+
+    });
+
+    enquire.register("screen and (max-width: 767px", function(){
+        $(".plglt-index-intro").css({'height':$(window).height()});
+    });
+
 });

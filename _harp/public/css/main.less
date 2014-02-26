@@ -39,16 +39,21 @@ h2 {
 
 .plglt-index-intro {
 
-  height: 60%;
-  min-height: 60%;
+  min-height: 400px;
 
   background: url(../images/cover.jpg) 50% 0 fixed;
   background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
 
   color: #fff;
   text-align: center;
 
+  .container {
+    vertical-align: middle;
+  }
   .page-header {
     margin-top: 0;
     border: 0;
@@ -58,17 +63,38 @@ h2 {
     margin-top: 60px;
   }
   .plgtl-index-intro-logo {
-    width: 160px;
-    height: 160px;
-    margin: 50px 0 35px 0;
+    width: 100px;
+    height: 100px;
+    margin: 10px 0 35px 0;
   }
 
   h1 {
-    font-size: 300%;
+    font-size: 200%;
   }
   h2 {
-    font-size: 250%;
+    font-size: 150%;
   }
+
+  @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+    background-size: 100%;
+  }
+
+  @media(min-width: @screen-sm-min) {
+    height: 60%;
+    min-height: 600px;
+    .plgtl-index-intro-logo {
+      width: 160px;
+      height: 160px;
+      margin: 50px 0 35px 0;
+    }
+    h1 {
+      font-size: 300%;
+    }
+    h2 {
+      font-size: 250%;
+    }
+  }
+
   h1, h2 {
     color: #fff;
     text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #000, 0 4px 0 #000, 0 5px 0 #000, 0 6px 1px rgba(0, 0, 0, .3), 0 0 5px rgba(0, 0, 0, .3), 0 1px 3px rgba(0, 0, 0, .9), 0 3px 5px rgba(0, 0, 0, .6)
