@@ -39,8 +39,8 @@ h2 {
 
 .plglt-index-intro {
 
-  height: 90%;
-  min-height: 90%;
+  height: 60%;
+  min-height: 60%;
 
   background: url(../images/cover.jpg) 50% 0 fixed;
   background-repeat: no-repeat;
@@ -54,6 +54,9 @@ h2 {
     border: 0;
   }
 
+  .hero-unit {
+    margin-top: 60px;
+  }
   .plgtl-index-intro-logo {
     width: 160px;
     height: 160px;
@@ -68,7 +71,7 @@ h2 {
   }
   h1, h2 {
     color: #fff;
-    text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #000, 0 4px 0 #000, 0 5px 0 #000, 0 6px 1px rgba(0, 0, 0, .3), 0 0 5px rgba(0, 0, 0, .3), 0 1px 3px rgba(0, 0, 0, .9), 0 3px 5px rgba(0, 0, 0, .6), 0 5px 10px rgba(0, 0, 0, .75), 0 10px 10px rgba(0, 0, 0, .6), 0 20px 20px rgba(0, 0, 0, .45);
+    text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #000, 0 4px 0 #000, 0 5px 0 #000, 0 6px 1px rgba(0, 0, 0, .3), 0 0 5px rgba(0, 0, 0, .3), 0 1px 3px rgba(0, 0, 0, .9), 0 3px 5px rgba(0, 0, 0, .6)
   }
 }
 
@@ -86,7 +89,8 @@ h2 {
 
 .plglt-section {
   .container > h1 {
-    padding-top: 55px;
+    margin: @line-height-computed * 3 0 @line-height-computed * 1.5;
+    text-align: center;
   }
 }
 
@@ -117,17 +121,7 @@ h2 {
 
 .plglt-community {
   .plglt-community-twitter {
-    .plglt-community-twitter-account {
-      text-align: center;
-    }
-    .plglt-community-twitter-hashtag {
-      text-align: center;
-    }
-    .plglt-community-meetup {
-      >img {
-        display: inline-block;
-      }
-    }
+    > li { text-align: center; }
   }
 }
 
@@ -151,11 +145,3 @@ h2 {
     height: 30px;
   }
 }
-
-
-
-
-
-
-
-
