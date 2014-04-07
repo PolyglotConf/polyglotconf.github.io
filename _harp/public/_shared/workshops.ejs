@@ -1,18 +1,91 @@
 <div class="container">
     <h1>Workshops <small>Friday May 23</small></h1>
+    <div class="row plglt-workshops-schedule">
+
+        <div class="col-sm-12">
+            <div class="panel-group" id="accordion">
+
+            <h2>Half Day Workshops: Morning</h2>
+            <% public.workshops._data.workshops.forEach(function(workshop) { %>
+            <% if(workshop.slot === "half-day-am" && workshop.active == true) { %>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#workshop-<%= workshop.key %>">
+                            <h3 class="panel-title"><%= workshop.title %> <span class="panel-title-instructor">with <%= workshop.instructor_name %></span></h3>
+                        </a>
+                    </div>
+                    <div id="workshop-<%= workshop.key %>" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-sm-6 workshop-abstract">
+                                    <h4>Abstract</h4>
+                                    <%- workshop.abstract %>
+                                </div>
+                                <div class="col-sm-6 workshop-instructor-bio">
+                                    <h4>About <%= workshop.instructor_name %></h4>
+                                    <%- workshop.instructor_bio %>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <% } %>
+            <% }) %>
+            <h2>Half Day Workshops: Afternoon</h2>
+            <% public.workshops._data.workshops.forEach(function(workshop) { %>
+            <% if(workshop.slot == "half-day-pm" && workshop.active == true) { %>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#workshop-<%= workshop.key %>">
+                            <h3 class="panel-title"><%= workshop.title %> <span class="panel-title-instructor">with <%= workshop.instructor_name %></span></h3>
+                        </a>
+                    </div>
+                    <div id="workshop-<%= workshop.key %>" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-sm-6 workshop-abstract">
+                                    <h4>Abstract</h4>
+                                    <%- workshop.abstract %>
+                                </div>
+                                <div class="col-sm-6 workshop-instructor-bio">
+                                    <h4>About <%= workshop.instructor_name %></h4>
+                                    <%- workshop.instructor_bio %>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <% } %>
+            <% }) %>
+            <h2>Full Day Workshops</h2>
+            <% public.workshops._data.workshops.forEach(function(workshop) { %>
+            <% if(workshop.slot == "full-day" && workshop.active == true) { %>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#workshop-<%= workshop.key %>">
+                            <h3 class="panel-title"><%= workshop.title %> <span class="panel-title-instructor">with <%= workshop.instructor_name %></span></h3>
+                        </a>
+                    </div>
+                    <div id="workshop-<%= workshop.key %>" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-sm-6 workshop-abstract">
+                                    <h4>Abstract</h4>
+                                    <%- workshop.abstract %>
+                                </div>
+                                <div class="col-sm-6 workshop-instructor-bio">
+                                    <h4>About <%= workshop.instructor_name %></h4>
+                                    <%- workshop.instructor_bio %>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <% } %>
+            <% }) %>
+            </div>
+        </div>
+    </div>
     <h2>Tickets</h2>
-    <div>
-        <p>Tutorial schedules and tickets will be available in early April.</p>
-    </div>
-    <h2>Schedule</h2>
-    <div>
-    <p>The call for tutorial/workshops is underway and will be open
-        until March 23rd. If you are interested in running a tutorial
-        or workshop, please
-        <a href="https://docs.google.com/forms/d/1J61Qt9HfM8Ovmm0Qo6LERCLSikKrD-0eOTkYrGUDzAY/viewform">submit your workshop proposal here</a>.
-    </p>
-    <p>
-        A full list of tutorials and ticket sales will be available early April.
-    </p>
-    </div>
+    <p>Workshop tickets will be available to purchase in early April.</p>
 </div>
