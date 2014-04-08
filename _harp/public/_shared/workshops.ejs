@@ -20,9 +20,17 @@
                                 <div class="col-sm-6 workshop-abstract">
                                     <h4>Abstract</h4>
                                     <%- workshop.abstract %>
+                                    <% if(workshop.syllabus_url !== "") { %>
+                                        <h4>Syllabus</h4>
+                                        <a href="<%= workshop.syllabus_url %>"><%= workshop.syllabus_url %></a>
+                                    <% } %>
                                 </div>
                                 <div class="col-sm-6 workshop-instructor-bio">
-                                    <h4>About <%= workshop.instructor_name %></h4>
+                                    <h4>About <%= workshop.instructor_first_name %>
+                                        <% if(workshop.twitter_handle) { %>
+                                        (<a href="https://twitter.com/<%= workshop.twitter_handle.replace(/^@/, '') %>"><%= workshop.twitter_handle %></a>)
+                                        <% } %>
+                                    </h4>
                                     <%- workshop.instructor_bio %>
                                 </div>
                             </div>
@@ -46,9 +54,17 @@
                                 <div class="col-sm-6 workshop-abstract">
                                     <h4>Abstract</h4>
                                     <%- workshop.abstract %>
+                                    <% if(workshop.syllabus_url !== "") { %>
+                                        <h4>Syllabus</h4>
+                                        <a href="<%= workshop.syllabus_url %>"><%= workshop.syllabus_url %></a>
+                                    <% } %>
                                 </div>
                                 <div class="col-sm-6 workshop-instructor-bio">
-                                    <h4>About <%= workshop.instructor_name %></h4>
+                                    <h4>About <%= workshop.instructor_first_name %>
+                                        <% if(workshop.twitter_handle) { %>
+                                        (<a href="https://twitter.com/<%= workshop.twitter_handle.replace(/^@/, '') %>"><%= workshop.twitter_handle %></a>)
+                                        <% } %>
+                                    </h4>
                                     <%- workshop.instructor_bio %>
                                 </div>
                             </div>
@@ -72,9 +88,17 @@
                                 <div class="col-sm-6 workshop-abstract">
                                     <h4>Abstract</h4>
                                     <%- workshop.abstract %>
+                                    <% if(workshop.syllabus_url !== "") { %>
+                                        <h4>Syllabus</h4>
+                                        <a href="<%= workshop.syllabus_url %>"><%= workshop.syllabus_url %></a>
+                                    <% } %>
                                 </div>
                                 <div class="col-sm-6 workshop-instructor-bio">
-                                    <h4>About <%= workshop.instructor_name %></h4>
+                                    <h4>About <%= workshop.instructor_first_name %>
+                                    <% if(workshop.twitter_handle) { %>
+                                        (<a href="https://twitter.com/<%= workshop.twitter_handle.replace(/^@/, '') %>"><%= workshop.twitter_handle %></a>)
+                                    <% } %>
+                                    </h4>
                                     <%- workshop.instructor_bio %>
                                 </div>
                             </div>
