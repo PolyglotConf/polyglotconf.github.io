@@ -20,7 +20,7 @@ $(function() {
 
         $('body').scrollspy({ target: '.plglt-nav', offset: calculateOffset})
 
-        $('.plglt-nav-menu a').bind('click',function(event) {
+        $('.plglt-nav-menu a.js-menu-scroll').bind('click',function(event) {
             event.preventDefault();
             $('html, body').animate({scrollTop: $($(this).attr('href')).offset().top}, 500);
         });

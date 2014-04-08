@@ -36,7 +36,84 @@
         </div>
     </section>
 
-    <%- yield %>
+    <nav class="navbar navbar-default plglt-nav" role="navigation">
+    <div class="container">
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav plglt-nav-menu">
+                <li><a href="/">&larr; Back to Main</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+<section id="conduct" class="plglt-section plglt-conduct">
+    <div class="container">
+        <h1>Code of Conduct</h1>
+
+        <div class="row conduct-heading">
+            <div class="col-xs-12">
+                <h2>
+                    tl;dr: Be Excellent To Each Other! And please, don’t be a jerk.
+                </h2>
+            </div>
+        </div>
+        <div class="row conduct-summary">
+            <div class="col-xs-12">
+                <p>
+                    We strive to be inclusive and keep events comfortable and fun for everyone. Our code of conduct
+                    follows
+                    the spirit of <a href="http://confcodeofconduct.com/">http://confcodeofconduct.com/</a>. Our events
+                    are
+                    dedicated to providing a harassment-free
+                    experience for everyone, regardless of gender, age, sexual orientation, disability, physical
+                    appearance,
+                    body size, race, or religion. We do not tolerate harassment of participants in any form. Sexual
+                    language
+                    and imagery is not appropriate for any venue, including talks, workshops, parties, Twitter and other
+                    online media. Participants violating these rules may be expelled at the discretion of the
+                    organizers. If
+                    we, the organizers, say or do something that makes you feel uncomfortable, please let us know.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 conduct-longversion-heading">
+                <h2>The longer version:</h2>
+            </div>
+            <div class="col-sm-6 conduct-longversion">
+                <p>Harassment includes offensive verbal comments related to gender, sexual orientation, disability,
+                    physical
+                    appearance, body size, race, religion, sexual images in public spaces, deliberate intimidation,
+                    stalking, following, harassing photography or recording, sustained disruption of talks or other
+                    events,
+                    inappropriate physical contact, and unwelcome sexual attention.</p>
+
+                <p>Participants asked to stop any harassing behavior are expected to comply immediately.</p>
+
+                <p>Sponsors are also subject to the anti-harassment policy. In particular, sponsors should not use
+                    sexualized images, activities, or other material. Speakers should not use sexualized
+                    clothing/uniforms/costumes, or otherwise create a sexualized environment.</p>
+            </div>
+            <div class="col-sm-6 conduct-longversion">
+                <p>If a participant engages in harassing behavior, the organizers may take any action they deem
+                    appropriate,
+                    including warning the offender or expulsion from the event.</p>
+
+                <p>If you are being harassed, notice that someone else is being harassed, or have any other concerns,
+                    please
+                    contact an organizer immediately.</p>
+
+                <p>Organizers will be happy to assist those experiencing harassment to feel safe. We value your
+                    attendance.</p>
+
+                <p>We expect participants to follow these rules at our events and polyglot-related social events.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
 
     <section id="links" class="plglt-section plglt-links plglt-outro">
         <div class="container">
@@ -70,13 +147,13 @@
     <script src="js/vendor/enquire-2.1.0.min.js"></script>
     <script src="js/main.js"></script>
 
-    <% if (googleAnalytics) { %>
+    
       <script>
-        var _gaq=[['_setAccount','<%= googleAnalytics %>'],['_trackPageview']];
+        var _gaq=[['_setAccount','UA-29943309-1'],['_trackPageview']];
         (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
         g.src='//www.google-analytics.com/ga.js';
         s.parentNode.insertBefore(g,s)}(document,'script'));
       </script>
-    <% } %>
+    
     </body>
 </html>
