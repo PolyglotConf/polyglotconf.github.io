@@ -126,7 +126,7 @@
         },
         {
             "key": "containers",
-            "active": true,
+            "active": false,
             "title": "Containers and PaaS: Revolutionizing Cloud Application Development",
             "topics": "Containers, PaaS, Cloud application development",
             "instructor_name" : "John Wetherill",
