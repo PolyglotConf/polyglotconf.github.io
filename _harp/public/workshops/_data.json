@@ -26,15 +26,15 @@
         },
         {
             "key": "golang",
-            "active": false,
+            "active": true,
             "title": "Go Bootcamp",
             "topics": "Go",
             "instructor_name" : "Kamil Kisiel",
             "instructor_first_name" : "Kamil",
             "slot": "full-day",
-            "abstract": "",
-            "instructor_bio" : "",
-            "syllabus_url" : ""
+            "abstract": "<p>The Go Bootcamp will cover everything you need to get started writing network and web applications in Go. The first half of the day be spent learning language fundamentals and best practices for programming in Go. In the second half participants will use tools available in the Go standard library to build a networked chat application with a web interface.</p>",
+            "instructor_bio" : "<p>I have been programming in Go professionally for two years and am currently working as a freelance developer and consultant. Previously I worked for a biotech startup in ops and software engineering. I've previously given talks at the SGI User Group Conference, Polyglot, and several meetup groups.</p>",
+            "syllabus_url" : "https://docs.google.com/document/d/1lvf8TfvRXQR9pomgwtXM-1YBhVjCVjcc4MKhT8MOmXs/edit?usp=sharing"
         },
         {
             "key": "reactjs",
@@ -59,7 +59,8 @@
             "slot": "full-day",
             "abstract": "<p>A full day hands-on dive into docker.</p>",
             "instructor_bio" : "",
-            "syllabus_url" : ""
+            "syllabus_url" : "",
+            "twitter_handle" : "@tavisrudd"
         },
         {
             "key": "scala-web",
@@ -87,50 +88,52 @@
         },
         {
             "key": "bdd",
-            "active": false,
+            "active": true,
             "title": "Behaviour Driven Development",
             "topics": "BDD",
             "instructor_name" : "Martin Suchanek",
             "instructor_first_name" : "Martin",
             "slot": "half-day-pm",
-            "abstract": "",
-            "instructor_bio" : "",
-            "syllabus_url" : ""
+            "abstract": "<p>Behaviour Driven Development, like any other dogma in software development, is a complicated beast. It's proselytized by the zealots, and abdicated by the trolls. The practical reality is somewhere in between. And the best we can do is arm ourselves with understanding.</p><p>BDD finds itself at the intersection of a lot of different disciplines. The majority of those are non-technical. This workshop will focus on the technical aspects. Having a solid understanding of these will allow practicioners to focus instead on the really important parts, instead of getting caught up in implementation details.</p>",
+            "instructor_bio" : "<p>I'm a multi-disciplined software developer, hacking away at technology, organization, and product since the first dot com boom (and bust). For some uncanny reason I've found myself wearing all the possible hats. I've worked in companies from 1 to 300 in size, from positions of sole proprietor, employee, advisor, and external contractor.</p><p>I have been practicing BDD in depth for the last five years, at three different organizations.</p>",
+            "syllabus_url" : "https://gist.github.com/mrtns/10081393",
+            "twitter_handle" : "@mrtn_su"
         },
         {
             "key": "ios-ui",
-            "active": false,
+            "active": true,
             "title": "Auto Layout and Storyboards on iOS",
             "topics": "iOS",
             "instructor_name" : "Allen Pike",
             "instructor_first_name" : "Allen",
             "slot": "full-day",
-            "abstract": "",
-            "instructor_bio" : "",
-            "syllabus_url" : ""
+            "abstract": "<p>Storyboards and Auto Layout are the two primary tools for laying out user interfaces on iOS. With the new Interface Builder functionality in Xcode 5.1 and the persistent rumours of a larger iPhone on the horizon, now is the time to level up your Storyboard and Auto Layout skills and get rid of your app's old manual layout code.</p><p>Our morning will focus on Storyboards, building out a simple Twitter client using Xcode and Interface Builder. Then we'll dive into code, with custom Segues and other advanced issues around Storyboards, paired with a more advanced coding exercise.</p><p>The afternoon will go deep into Auto Layout, starting with the theory as a refresher before going into building Auto Layouts in Xcode, highlighting the new Auto Layout tools in Xcode 5.1. After an exercise in Interface Builder, we'll dig into code, building and debugging more advanced Auto Layouts, finishing with an Auto Layout torture test exercise.</p>",
+            "instructor_bio" : "<p>Steamclock is one of the top iOS development studios in Canada, with a team of mobile developers focused on great UI and UX, and are organizers of the VanCocoa speaker series on iOS and Mac development.</p><p>Allen Pike and Nigel Brooke are seasoned iOS developers who have taught at SFU and University of Calgary respectively. Prior to founding Steamclock, Allen was a Software Engineer at Apple. You can see an example of Allen speaking on iOS and JavaScript development at JSConf in Berlin <a href=\"https://www.youtube.com/watch?v=5LUkHss6CAw\">here.</a></p><p>Last year at Polyglot Steamclock put on a less in-depth day-long iOS tutorial, which was well received.</p>",
+            "syllabus_url" : "",
+            "twitter_handle" : "@apike"
         },
         {
             "key": "emberjs",
-            "active": false,
+            "active": true,
             "title": "Intro to EmberJS",
             "topics": "Javascript, EmberJS",
             "instructor_name" : "Dave Laird",
             "instructor_first_name" : "Dave",
             "slot": "half-day-am",
-            "abstract": "",
-            "instructor_bio" : "",
+            "abstract": "<p>Storyboards and Auto Layout are the two primary tools for laying out user interfaces on iOS. With the new Interface Builder functionality in Xcode 5.1 and the persistent rumours of a larger iPhone on the horizon, now is the time to level up your Storyboard and Auto Layout skills and get rid of your app's old manual layout code.</p><p>Our morning will focus on Storyboards, building out a simple Twitter client using Xcode and Interface Builder. Then we'll dive into code, with custom Segues and other advanced issues around Storyboards, paired with a more advanced coding exercise.</p><p>The afternoon will go deep into Auto Layout, starting with the theory as a refresher before going into building Auto Layouts in Xcode, highlighting the new Auto Layout tools in Xcode 5.1. After an exercise in Interface Builder, we'll dig into code, building and debugging more advanced Auto Layouts, finishing with an Auto Layout torture test exercise.</p>",
+            "instructor_bio" : "<p>We did <a href=\"http://www.meetup.com/seattlejs/events/151743492/\">this workshop</a> for the Seattle JS meetup</p><p>I'm a front end developer at urbanspoon.com and the co-ordinator of the Seattle Ember Meetup.</p><p><a href=\"https://github.com/kiwiupover\">github.com/kiwiupover</a></p>",
             "syllabus_url" : ""
         },
         {
             "key": "containers",
-            "active": false,
+            "active": true,
             "title": "Containers and PaaS: Revolutionizing Cloud Application Development",
             "topics": "Containers, PaaS, Cloud application development",
             "instructor_name" : "John Wetherill",
             "instructor_first_name" : "John",
             "slot": "full-day",
-            "abstract": "",
-            "instructor_bio" : "",
+            "abstract": "<p>Abstract</p><ul><li>Audience level: Beginner to Intermediate</li><li>Category: Cloud Development/li><li>Appropriate for: Cloud application developers, deployers, testers, maintainers</li></ul><p>Platform-as-a-Service (PaaS) is revolutionizing cloud application development, providing a fully-equipped foundation that allows developers to rapidly build, deploy, test, debug, monitor, and scale cloud applications. Linux Containers are a fundamental building block of many modern PaaS offerings, providing all the advantages of conventional virtual machines, but extremely lightweight and portable. The combination of these two technologies, PaaS and containers, provides developers almost everything they need to rapidly build and deploy secure, scalable and robust cloud applications. </p><p>Learn how to employ a Platform as a Service, or PaaS, to rapidly build and deploy secure, scalable and robust cloud applications. This all-day workshop will alternate between lecture and hands-on labs, and in keeping with the polyglot theme of this conference, will cover a wide range of modern programming languages including Java, Ruby, Python, PHP, Clojure, JavaScript and Perl. There will be an in-depth look and hands-on approach working with both technologies: PaaS and containers. After an introduction to cloud concepts and modern cloud development practices, we'll roll up our sleeves and dive deep into essential concepts and tools, including:</p><ul><li>Hands-on with a Platform-as-a-Service (PaaS)</li><li>Lightweight containers and application isolation</li><li>Hands-on managing containers with Docker</li><li>Design/architecture considerations for cloud apps</li><li>Hands-on building and deploying cloud applications</li><li>Hands-on cloud app migration to any infrastructure; public, private, or hybrid</li><li>Practices for securing and scaling cloud apps</li><li>Hands-on monitoring, debugging, and logging in the cloud</li></ul><p>This workshop is intended for developers of any language who are currently building or are interested in deploying web apps using twelve-factor methodology on EC2, OpenStack, Rackspace, VSphere, etc. (public, private, or hybrid clouds).</p><p>Prerequisites</p><ul><li>Familiarity with one or more modern programming language(s)</li><li>Some understanding of conventional web application design</li><li>Bring a laptop with a web browser installed (or be willing to look over another attendee's shoulder)</li></ul>",
+            "instructor_bio" : "<p>John Wetherill, ActiveState's Developer Evangelist, is originally from Canada. John has spent much of his career designing and building software at several startups, at Sun Microsystems, NeXT Inc., and most recently in the smart grid and energy space. His biggest passion is for developer tools, or more generally any tool, language, process, or system that improves developer productivity and quality of life. Without question, Stackato is one such tool and the reason why he is at ActiveState. No stranger to technology evangelism, John spent several years in the late 1990's on Sun's Technology Evangelism Team spreading the Java Gospel across the globe and focusing on the prolific number of Java technologies. John has returned to his roots, as Developer Evangelist at ActiveState, a Canadian company, albeit, he works remotely from Santa Cruz. He has presented sessions and workshops on PaaS, containers and deploying hybrid cloud application using various languages, at events such as PyCon, QCon, LinuxCon and others including CloudConnect.</p>",
             "syllabus_url" : ""
         }
     ]
