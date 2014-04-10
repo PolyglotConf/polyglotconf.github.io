@@ -72,7 +72,9 @@
             "slot": "full-day",
             "abstract": "<p>Web apps and APIs are hugely important parts of modern life, but in many cases, the way they're built hasn't changed in many years. These older tools make scale-out hard, and the resulting systems don't always handle failures gracefully. </p>\n\n<p>Let's take a deep dive into a technology stack that is designed from the ground up for productivity, scalability, correctness and fault tolerance, and see how much can be achieved with surprisingly little code.</p>",
             "instructor_bio" : "<p>I've been building software for a disturbingly long time, and felt like I knew what I was doing until I met Scala and realized how much of the world of computer science I'd been missing.</p>\n\n<p>Over the past four years, I've used Scala for all my serious development work, and have accumulated a tiny bit of wisdom and a lot of humility to go with my battle scars and war stories.</p>",
-            "syllabus_url" : ""
+            "twitter_handle" : "@alexcruise",
+            "syllabus_url" : "https://docs.google.com/document/d/14WEBW9MZxQ0bjMG4Z4B0lVtMl3CDE4MjujFOkEj2_WM/edit?usp=sharing",
+            "instructor_image" : "http://cluonflux.com/images/1.jpg"
         },
         {
             "key": "haskell",
