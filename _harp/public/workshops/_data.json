@@ -122,9 +122,11 @@
             "instructor_name" : "Dave Laird",
             "instructor_first_name" : "Dave",
             "slot": "half-day-am",
-            "abstract": "<p>NBCNews.com, Bustle.com, discourse.org, and companies like Square, Yahoo, Groupon, and zendesk (to name just a few) use EmberJS apps in production. Ember's approach of convention over configuration makes it easy to build complex JavaScript apps with a sensible, maintainable, and extensible architecture.</p> <p>During this three hour intro to EmberJS we will build an Ember app. You will leave the tutorial with a good start towards building your own ember app.</p> <p>Building pieces of <a href=\"http://ember-weather.herokuapp.com/locations/vancouver-canada\">http://ember-weather.herokuapp.com/locations/vancouver-canada</a></p>",
-            "instructor_bio" : "<p>We did <a href=\"http://www.meetup.com/seattlejs/events/151743492/\">this workshop</a> for the Seattle JS meetup</p><p>I'm a front end developer at urbanspoon.com and the co-ordinator of the Seattle Ember Meetup.</p><p><a href=\"https://github.com/kiwiupover\">github.com/kiwiupover</a></p>",
-            "syllabus_url" : ""
+            "abstract": "<p><a href='http://nbcnews.com' target='_blank'>NBCNews.com</a>, <a href='http://vine.co' target='_blank'>Vine.co</a>, <a href='http://bustle.com' target='_blank'>Bustle.com</a>, and companies like Square, Yahoo, Groupon, and zendesk (to name just a few) use EmberJS apps in production. Ember's approach of convention over configuration makes it easy to build complex JavaScript apps with a sensible, maintainable, and extensible architecture.</p> <p>During this three hour intro to EmberJS we will build an Ember app. You will leave the tutorial with a good start towards building your own ember app.</p> <p>Building pieces of <a href=\"http://ember-weather.herokuapp.com/locations/vancouver-canada\" target='_blank'>ember-weather.herokuapp.com</a></p>",
+            "instructor_bio" : "<p>After years of glueing jQuery spaghetti together developing with Ember is a delight. Building the ember community in Seattle through training, hack night and meetups has been a joy. </p> <p>I'm a front end developer at urbanspoon.com and the co-ordinator of the Seattle Ember Meetup.</p>",
+            "syllabus_url" : "http://kiwiupover.roughdraft.io/10342025-intro-to-ember",
+            "twitter_handle" : "@kiwiupover",
+            "instructor_image" : "https://pbs.twimg.com/profile_images/511773925/crash_hot2.jpg"
         },
         {
             "key": "containers",
