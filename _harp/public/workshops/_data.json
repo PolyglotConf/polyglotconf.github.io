@@ -37,7 +37,8 @@
             "abstract": "<p>The Go Bootcamp will cover everything you need to get started writing network and web applications in Go. The first half of the day be spent learning language fundamentals and best practices for programming in Go. In the second half participants will use tools available in the Go standard library to build a networked chat application with a web interface.</p>",
             "instructor_bio" : "<p>I have been programming in Go professionally for two years and am currently working as a freelance developer and consultant. Previously I worked for a biotech startup in ops and software engineering. I've previously given talks at the SGI User Group Conference, Polyglot, and several meetup groups.</p>",
             "prerequisites" : "",
-            "syllabus_url" : "https://docs.google.com/document/d/1lvf8TfvRXQR9pomgwtXM-1YBhVjCVjcc4MKhT8MOmXs/edit?usp=sharing"
+            "syllabus_url" : "https://docs.google.com/document/d/1lvf8TfvRXQR9pomgwtXM-1YBhVjCVjcc4MKhT8MOmXs/edit?usp=sharing",
+            "twitter_handle" : "@kisielk"
         },
         {
             "key": "reactjs",
@@ -49,7 +50,7 @@
             "slot": "full-day",
             "abstract": "<p>React is a Javascript library for building user interfaces that challenges some fundamental assumptions about how user interfaces should be built. In this workshop, you will learn to &quot;think in React,&quot; as you build an interactive, data-driven, client-server web application in the browser.</p>\n\n<p>First, we will learn what's distinctive about the React approach, and how we can benefit from it. Next, we will learn how React components are built, how they operate, how they communicate with each other, and how to test them. Along the way, in pairs or small groups, we will laugh, cry, scream, and cheer, but ultimately build some working software, the React Way.</p>",
             "instructor_bio" : "<p>Steven Luscher builds web and mobile applications using HTML, CSS, Javascript, Ruby, and Objective-C. En-route to becoming a polyglot coder, he made stops along the way to pursue formal education in graphic design, mathematics, and pedagogy; experiences which have served him well in the area of web application development.</p>\n\n<p>In 2013, he delivered a <a href=\"https://github.com/steveluscher/react-supervanjs-2013\">conference talk</a> about React at Super VanJS. He currently works full-time developing a mammoth React-based application using Coffeescript, JSX, Node, and MongoDB.</p>\n\n<p>He does not work for Facebook.</p>",
-            "prerequisites" : "",
+            "prerequisites" : "<ul><li>Materials: Bring a laptop with Chrome and your favorite text editor. For the full experience, have <a href=\"https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager\">Node/NPM installed</a>.</li><li>Knowledge: You should be familiar with HTML, and one of either Coffeescript or Javascript.</li></ul>",
             "syllabus_url" : "https://github.com/steveluscher/react-polyglot-conf-2014",
             "twitter_handle" : "@steveluscher"
         },
@@ -93,8 +94,9 @@
             "slot": "full-day",
             "abstract": "<p>Participants will tip their toes into the functional programming mindset using Haskell. This is described by many as a mind-bending experience and a challenging one, covering many concepts of the functional paradigm like persistent data structures, tail-recursion, Functors, Monads etc. </p>\n\n<p>We'll explore the lazy behavior of the language, and also how to make functions pure (e.g. enforce avoidance of unintended side effects).</p>\n\n<p>We are going to learn the different tools that Haskell provide for concurrent programming, from Software Transactional Memory, to basic mutable variables.</p>\n\n<p>We are going to learn the basics of Parser Combinators, and we will finish it up with the implementation of a very basic Web app using Scotty, an easy to use Web Framework.</p>",
             "instructor_bio" : "<p>Roman Gonzalez is one of the co-founder of Birdseye Software, he has done many consultancy jobs in the past using Ruby on Rails, and has lead the development team of a local Startup, he has participated in many open source projects using Ruby, Clojure, elisp and Haskell. </p>\n\n<p>He has been using Haskell for the past 6 years, and has given many tutorials on the Vancouver's Haskell Meetup where he is one of the main organizers. He also has given presentations in the Polyglot Meetup and ClojureWest 2013.</p>",
-            "prerequisites" : "",
-            "syllabus_url" : ""
+            "prerequisites" : "<ul><li>Materials: This course assumes you use a machine with Linux/MacOS X, you will need to install the <a href=\"http://www.haskell.org/platform/\">Haskell Platform.</a></li><li>Knowledge: This course assumes familiarity with Linux/Unix command line, familiarity with a programming language that has a REPL (ruby, python, nodejs, scala) will be helpful. Basic knowledge of programming in Java/C/C++/Ruby/Python is desirable.</li></ul>",
+            "syllabus_url" : "",
+            "twitter_handle" : "@romanandreg"
         },
         {
             "key": "bdd",
@@ -120,7 +122,7 @@
             "slot": "full-day",
             "abstract": "<p>Storyboards and Auto Layout are the two primary tools for laying out user interfaces on iOS. With the new Interface Builder functionality in Xcode 5.1 and the persistent rumours of a larger iPhone on the horizon, now is the time to level up your Storyboard and Auto Layout skills and get rid of your app's old manual layout code.</p><p>Our morning will focus on Storyboards, building out a simple Twitter client using Xcode and Interface Builder. Then we'll dive into code, with custom Segues and other advanced issues around Storyboards, paired with a more advanced coding exercise.</p><p>The afternoon will go deep into Auto Layout, starting with the theory as a refresher before going into building Auto Layouts in Xcode, highlighting the new Auto Layout tools in Xcode 5.1. After an exercise in Interface Builder, we'll dig into code, building and debugging more advanced Auto Layouts, finishing with an Auto Layout torture test exercise.</p>",
             "instructor_bio" : "<p>Steamclock is one of the top iOS development studios in Canada, with a team of mobile developers focused on great UI and UX, and are organizers of the VanCocoa speaker series on iOS and Mac development.</p><p>Allen Pike and Nigel Brooke are seasoned iOS developers who have taught at SFU and University of Calgary respectively. Prior to founding Steamclock, Allen was a Software Engineer at Apple. You can see an example of Allen speaking on iOS and JavaScript development at JSConf in Berlin <a href=\"https://www.youtube.com/watch?v=5LUkHss6CAw\">here.</a></p><p>Last year at Polyglot Steamclock put on a less in-depth day-long iOS tutorial, which was well received.</p>",
-            "prerequisites" : "",
+            "prerequisites" : "<ul><li>Materials: a laptop with Xcode installed.</li><li>Knowledge: Basic familiarity with iOS development</li></ul>",
             "syllabus_url" : "",
             "twitter_handle" : "@apike"
         },

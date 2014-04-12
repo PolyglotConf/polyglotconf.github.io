@@ -20,8 +20,10 @@
                                 <div class="col-sm-6 workshop-abstract">
                                     <h4>Abstract</h4>
                                     <%- workshop.abstract %>
-                                    <h4>Prerequisites</h4>
-                                    <%- workshop.prerequisites %>
+                                    <% if(workshop.prerequisites !== "") { %>
+                                        <h4>Prerequisites</h4>
+                                        <%- workshop.prerequisites %>
+                                    <% } %>
                                     <% if(workshop.syllabus_url !== "") { %>
                                         <h4>Syllabus</h4>
                                         <a href="<%= workshop.syllabus_url %>"><%= workshop.syllabus_url %></a>
@@ -56,8 +58,10 @@
                                 <div class="col-sm-6 workshop-abstract">
                                     <h4>Abstract</h4>
                                     <%- workshop.abstract %>
-                                    <h4>Prerequisites</h4>
-                                    <%- workshop.prerequisites %>
+                                    <% if(workshop.prerequisites !== "") { %>
+                                        <h4>Prerequisites</h4>
+                                        <%- workshop.prerequisites %>
+                                    <% } %>
                                     <% if(workshop.syllabus_url !== "") { %>
                                         <h4>Syllabus</h4>
                                         <a href="<%= workshop.syllabus_url %>"><%= workshop.syllabus_url %></a>
@@ -92,8 +96,10 @@
                                 <div class="col-sm-6 workshop-abstract">
                                     <h4>Abstract</h4>
                                     <%- workshop.abstract %>
-                                    <h4>Prerequisites</h4>
-                                    <%- workshop.prerequisites %>
+                                    <% if(workshop.prerequisites !== "") { %>
+                                        <h4>Prerequisites</h4>
+                                        <%- workshop.prerequisites %>
+                                    <% } %>
                                     <% if(workshop.syllabus_url !== "") { %>
                                         <h4>Syllabus</h4>
                                         <a href="<%= workshop.syllabus_url %>"><%= workshop.syllabus_url %></a>
