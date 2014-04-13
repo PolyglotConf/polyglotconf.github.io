@@ -11,7 +11,8 @@
             "abstract": "<p>This tutorial is an Elasticsearch bootcamp. Elasticsearch is a distributed and scalable search server based on Apache Lucene. You can use Elasticsearch to power your search and analytics in your applications. At the end of the day, you&rsquo;ll:</p>\n\n<p>1. know the most important concepts and terminology of search engines<br />\n2. have a deep understanding of Elasticsearch<br />\n3. apply Elasticsearch to build search applications<br />\n4. analyze and resolve common problems with Elasticsearch</p>\n\n<p>No prior experience with search or Elasticsearch is required. <br />\n</p>",
             "instructor_bio": "<p>10+ years of professional programming experience.</p>\n\n<p>Relevant background: I run a hosted Elasticsearch company silota.com, so I'm familiar with most build and operational aspects of ES.</p>\n\n<p>My most <a href=\"http://www.slideshare.net/silota/building-restful-apis\">recent talk</a> on building APIs at Vancouver Python Day was well received:</p>\n\n<p>I like the challenge of taking complex topics and explaining them to a beginner.<br />\n</p>",
             "prerequisites" : "",
-            "syllabus_url" : ""
+            "syllabus_url" : "",
+            "twitter_handle" : "@gane5h"
         },
         {
             "key": "testable-software",
@@ -24,7 +25,8 @@
             "abstract": "<p>We all know we should test the software we write, and yet many of us still write software that is difficult to test. In this tutorial we'll work through refactoring software to be easier to test and walk through examples of code written with testing in mind. Bring a laptop with either JDK 1.7 or Visual Studio (with C#) installed and expect to write code and tests.</p>",
             "instructor_bio" : "<p>Clifford Hammerschmidt is a software architect with over twenty years experience architecting and writing software. He currently works for Amazon and organizes the Vancouver Software Developers Meetup (<a href=\"http://vandev.org\">vandev.org</a>). He has worked on business applications, anti-spam systems, games, low level concurrency libraries, and high volume application apis handling thousands of requests a second.</p>",
             "prerequisites" : "",
-            "syllabus_url" : ""
+            "syllabus_url" : "",
+            "twitter_handle" : "@tangledbones"
         },
         {
             "key": "golang",
