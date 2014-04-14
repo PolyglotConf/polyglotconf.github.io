@@ -31,7 +31,11 @@ $(function() {
 
         $(window).load(function() {
             refreshScrollSpy();
-        })
+        });
+
+        $('#accordion').on('shown.bs.collapse hidden.bs.collapse', function () {
+            refreshScrollSpy();
+        });
     };
 
     var initParallax = function() {
