@@ -68,4 +68,12 @@ $(function() {
         $(".plglt-index-intro").css({'height':$(window).height()});
     });
 
+    $('#accordion').on('shown.bs.collapse', function() {
+        var expandedPanel = $('.panel-collapse.in');
+        var expandedPanelHeading = expandedPanel.siblings('.panel-heading');
+        var stickyMenuHeight = $('.plglt-nav.affix').height()*1.1;
+        if(expandedPanelHeading.offset().top < $(window).scrollTop()+stickyMenuHeight) {
+            $('html, body').animate({scrollTop: expandedPanelHeading.offset().top - stickyMenuHeight}, 250);
+        }
+    })
 });

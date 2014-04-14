@@ -1,127 +1,623 @@
 <div class="container">
-    <h1>Workshops <small>Friday May 23</small></h1>
-    <div class="row plglt-workshops-schedule">
+<h1>Workshops
+    <small>Friday May 23</small>
+</h1>
+<div class="row plglt-workshops-schedule">
 
-        <div class="col-sm-12">
-            <div class="panel-group" id="accordion">
+<div class="col-sm-12">
 
-            <h2>Half Day Workshops: Morning</h2>
-            <% public.workshops._data.workshops.forEach(function(workshop) { %>
-            <% if(workshop.slot === "half-day-am" && workshop.active == true) { %>
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#workshop-<%= workshop.key %>">
-                            <h3 class="panel-title"><%= workshop.title %> <span class="panel-title-instructor">with <%= workshop.instructor_name %></span></h3>
-                        </a>
-                    </div>
-                    <div id="workshop-<%= workshop.key %>" class="panel-collapse collapse">
-                        <div class="panel-body">
-                            <div class="row">
-                                <div class="col-sm-6 workshop-abstract">
-                                    <h4>Abstract</h4>
-                                    <%- workshop.abstract %>
-                                    <% if(workshop.prerequisites !== "") { %>
-                                        <h4>Prerequisites</h4>
-                                        <%- workshop.prerequisites %>
-                                    <% } %>
-                                    <% if(workshop.syllabus_url !== "") { %>
-                                        <h4>Syllabus</h4>
-                                        <a href="<%= workshop.syllabus_url %>"><%= workshop.syllabus_url %></a>
-                                    <% } %>
-                                </div>
-                                <div class="col-sm-6 workshop-instructor-bio">
-                                    <h4>About <%= workshop.instructor_first_name %>
-                                        <% if(workshop.twitter_handle) { %>
-                                        (<a href="https://twitter.com/<%= workshop.twitter_handle.replace(/^@/, '') %>"><%= workshop.twitter_handle %></a>)
-                                        <% } %>
-                                    </h4>
-                                    <%- workshop.instructor_bio %>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+<div class="panel-group" id="accordion">
+
+<h2>Half Day Workshops: Morning</h2>
+
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <a data-toggle="collapse" data-parent="#accordion" href="#workshop-elasticsearch">
+            <h3 class="panel-title">Getting started with Elasticsearch <span class="panel-title-instructor">with Ganesh Swami</span>
+            </h3>
+        </a>
+    </div>
+    <div id="workshop-elasticsearch" class="panel-collapse collapse">
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-sm-6 workshop-abstract">
+                    <h4>Abstract</h4>
+
+                    <p>This tutorial is an Elasticsearch bootcamp. Elasticsearch is a distributed and scalable search
+                        server based on Apache Lucene. Companies like foursquare, soundcloud, github and hundreds more
+                        use it to power search and analytics in their applications.</p>
+
+                    <p>At the end of the day, you’ll:</p>
+
+                    <p>1. know the most important concepts and terminology of search engines<br>
+                        2. have a deep understanding of Elasticsearch<br>
+                        3. apply Elasticsearch to build search applications<br>
+                        4. analyze and resolve common problems with Elasticsearch</p>
+
+                    <p>No prior experience with search or Elasticsearch is required. This tutorial is specially useful
+                        for folks using Elasticsearch for logging and want to learn how to use some of the more advanced
+                        features. <br>
+                    </p>
+
+                    <h4>Prerequisites</h4>
+                    <ul>
+                        <li>Materials: Bring a laptop with Java 6+
+                            (http://www.oracle.com/technetwork/java/javase/downloads/index.html)
+                        </li>
+                        <li>Knowledge: The basics of web services (HTTP, request/response, JSON)</li>
+                    </ul>
+
+
+                    <h4>Syllabus</h4>
+                    <a href="https://gist.github.com/gane5h/10610797">https://gist.github.com/gane5h/10610797</a>
+
                 </div>
-            <% } %>
-            <% }) %>
-            <h2>Half Day Workshops: Afternoon</h2>
-            <% public.workshops._data.workshops.forEach(function(workshop) { %>
-            <% if(workshop.slot == "half-day-pm" && workshop.active == true) { %>
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#workshop-<%= workshop.key %>">
-                            <h3 class="panel-title"><%= workshop.title %> <span class="panel-title-instructor">with <%= workshop.instructor_name %></span></h3>
-                        </a>
-                    </div>
-                    <div id="workshop-<%= workshop.key %>" class="panel-collapse collapse">
-                        <div class="panel-body">
-                            <div class="row">
-                                <div class="col-sm-6 workshop-abstract">
-                                    <h4>Abstract</h4>
-                                    <%- workshop.abstract %>
-                                    <% if(workshop.prerequisites !== "") { %>
-                                        <h4>Prerequisites</h4>
-                                        <%- workshop.prerequisites %>
-                                    <% } %>
-                                    <% if(workshop.syllabus_url !== "") { %>
-                                        <h4>Syllabus</h4>
-                                        <a href="<%= workshop.syllabus_url %>"><%= workshop.syllabus_url %></a>
-                                    <% } %>
-                                </div>
-                                <div class="col-sm-6 workshop-instructor-bio">
-                                    <h4>About <%= workshop.instructor_first_name %>
-                                        <% if(workshop.twitter_handle) { %>
-                                        (<a href="https://twitter.com/<%= workshop.twitter_handle.replace(/^@/, '') %>"><%= workshop.twitter_handle %></a>)
-                                        <% } %>
-                                    </h4>
-                                    <%- workshop.instructor_bio %>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="col-sm-6 workshop-instructor-bio">
+                    <h4>About Ganesh
+
+                        (<a href="https://twitter.com/gane5h">@gane5h</a>)
+
+                    </h4>
+
+                    <img class="workshop-instructor-image" src="https://pbs.twimg.com/profile_images/378800000260590573/bf55aeb93185280fa276c4f27b55a9e7_bigger.png" alt="Ganesh Swami">
+                    <p>10+ years of professional programming experience.</p>
+
+                    <p>Relevant background: I founded a hosted Elasticsearch company silota.com, so I'm familiar with
+                        most build and operational aspects of Elasticsearch.</p>
+
+                    <p>My most <a href="http://www.slideshare.net/silota/building-restful-apis">recent talk</a> on
+                        building APIs at Vancouver Python Day was well received.</p>
+
+                    <p>I like the challenge of taking complex topics and explaining them to a beginner.<br>
+                    </p>
                 </div>
-            <% } %>
-            <% }) %>
-            <h2>Full Day Workshops</h2>
-            <% public.workshops._data.workshops.forEach(function(workshop) { %>
-            <% if(workshop.slot == "full-day" && workshop.active == true) { %>
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#workshop-<%= workshop.key %>">
-                            <h3 class="panel-title"><%= workshop.title %> <span class="panel-title-instructor">with <%= workshop.instructor_name %></span></h3>
-                        </a>
-                    </div>
-                    <div id="workshop-<%= workshop.key %>" class="panel-collapse collapse">
-                        <div class="panel-body">
-                            <div class="row">
-                                <div class="col-sm-6 workshop-abstract">
-                                    <h4>Abstract</h4>
-                                    <%- workshop.abstract %>
-                                    <% if(workshop.prerequisites !== "") { %>
-                                        <h4>Prerequisites</h4>
-                                        <%- workshop.prerequisites %>
-                                    <% } %>
-                                    <% if(workshop.syllabus_url !== "") { %>
-                                        <h4>Syllabus</h4>
-                                        <a href="<%= workshop.syllabus_url %>"><%= workshop.syllabus_url %></a>
-                                    <% } %>
-                                </div>
-                                <div class="col-sm-6 workshop-instructor-bio">
-                                    <h4>About <%= workshop.instructor_first_name %>
-                                    <% if(workshop.twitter_handle) { %>
-                                        (<a href="https://twitter.com/<%= workshop.twitter_handle.replace(/^@/, '') %>"><%= workshop.twitter_handle %></a>)
-                                    <% } %>
-                                    </h4>
-                                    <%- workshop.instructor_bio %>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            <% } %>
-            <% }) %>
             </div>
         </div>
     </div>
-    <h2>Tickets</h2>
-    <p>Workshop tickets will be available to purchase in early April.</p>
+</div>
+
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <a data-toggle="collapse" data-parent="#accordion" href="#workshop-emberjs">
+            <h3 class="panel-title">Intro to EmberJS <span class="panel-title-instructor">with Dave Laird</span></h3>
+        </a>
+    </div>
+    <div id="workshop-emberjs" class="panel-collapse collapse">
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-sm-6 workshop-abstract">
+                    <h4>Abstract</h4>
+
+                    <p><a href="http://nbcnews.com" target="_blank">NBCNews.com</a>, <a href="http://vine.co"
+                                                                                        target="_blank">Vine.co</a>, <a
+                                href="http://bustle.com" target="_blank">Bustle.com</a>, and companies like Square,
+                        Yahoo, Groupon, and zendesk (to name just a few) use <a href="emberjs.com" target="_blank">EmberJS</a>
+                        apps in production. Ember's approach of convention over configuration makes it easy to build
+                        complex JavaScript apps with a sensible, maintainable, and extensible architecture.</p>
+
+                    <p>During this three and half hour introduction to EmberJS we will build an pieces of an Ember
+                        application. You will leave the tutorial well on your way to building your own ember
+                        application.</p>
+
+                    <p>During the tutorial we will building <a
+                                href="http://ember-weather.herokuapp.com/locations/vancouver-canada" target="_blank">ember-weather.herokuapp.com</a>
+                    </p>
+
+                    <h4>Prerequisites</h4>
+                    <ul>
+                        <li>Materials: a computer with <a href="http://nodejs.org/download/" target="_blank">node.js</a>,
+                            <a href="http://git-scm.com/downloads" target="_blank">git</a> and a good text editor
+                            installed.
+                        </li>
+                        <li>Knowledge: Some familiarity with javascript.</li>
+                    </ul>
+
+
+                    <h4>Syllabus</h4>
+                    <a href="http://kiwiupover.roughdraft.io/10342025-intro-to-ember">http://kiwiupover.roughdraft.io/10342025-intro-to-ember</a>
+
+                </div>
+                <div class="col-sm-6 workshop-instructor-bio">
+                    <h4>About Dave
+
+                        (<a href="https://twitter.com/kiwiupover">@kiwiupover</a>)
+
+                    </h4>
+
+                    <img class="workshop-instructor-image" src="https://pbs.twimg.com/profile_images/511773925/crash_hot2_bigger.jpg" alt="Dave Laird">
+                    <p>After years of glueing jQuery spaghetti code together developing with Ember is a delight.
+                        Building the ember community in Seattle through training, hack nights and meetups has been a
+                        joy. </p>
+
+                    <p>I'm a front end developer at urbanspoon.com and the co-ordinator of the Seattle Ember Meetup.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<h2>Half Day Workshops: Afternoon</h2>
+
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <a data-toggle="collapse" data-parent="#accordion" href="#workshop-testable-software">
+            <h3 class="panel-title">Writing Testable Software <span class="panel-title-instructor">with Clifford Hammerschmidt</span>
+            </h3>
+        </a>
+    </div>
+    <div id="workshop-testable-software" class="panel-collapse collapse">
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-sm-6 workshop-abstract">
+                    <h4>Abstract</h4>
+
+                    <p>We all know we should test the software we write, and yet many of us still write software that is
+                        difficult to test. In this tutorial we'll work through refactoring software to be easier to test
+                        and walk through examples of code written with testing in mind. Bring a laptop with either JDK
+                        1.7 or Visual Studio (with C#) installed and expect to write code and tests.</p>
+
+                    <h4>Prerequisites</h4>
+                    <ul>
+                        <li>Materials: Bring a laptop with either JDK 1.7 + your favourite editor/IDE or Visual Studio
+                            (C#)
+                        </li>
+                        <li>Knowledge: Basic programming experience in either platform</li>
+                    </ul>
+
+
+                </div>
+                <div class="col-sm-6 workshop-instructor-bio">
+                    <h4>About Clifford
+
+                        (<a href="https://twitter.com/tangledbones">@tangledbones</a>)
+
+                    </h4>
+
+                    <img class="workshop-instructor-image" src="https://pbs.twimg.com/profile_images/460070717/skel_bigger.jpg" alt="Clifford Hammerschmidt">
+                    <p>Clifford Hammerschmidt is a software architect with over twenty years experience architecting and
+                        writing software. He currently works for Amazon and organizes the Vancouver Software Developers
+                        Meetup (<a href="http://vandev.org">vandev.org</a>). He has worked on business applications,
+                        anti-spam systems, games, low level concurrency libraries, and high volume application apis
+                        handling thousands of requests a second.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <a data-toggle="collapse" data-parent="#accordion" href="#workshop-bdd">
+            <h3 class="panel-title">BDD Implementation Patterns <span class="panel-title-instructor">with Martin Suchanek</span>
+            </h3>
+        </a>
+    </div>
+    <div id="workshop-bdd" class="panel-collapse collapse">
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-sm-6 workshop-abstract">
+                    <h4>Abstract</h4>
+
+                    <p>Behaviour Driven Development is an incredibly powerful methodology for delivering software.</p>
+
+                    <p>In practice, however, many teams spend a disproportionate amount of effort on tooling and
+                        implementation details, leaving little time left for the more lucrative non-technical
+                        aspects.</p>
+
+                    <p>This workshop will explore the most effective approaches to implementing BDD. The goal is to arm
+                        you with a set of proven patterns that you can apply immediately to your practice, allowing you
+                        to focus instead on the more important parts: your business and your users.</p>
+
+                    <h4>Prerequisites</h4>
+                    <ul>
+                        <li>Materials: a laptop with your favorite BDD framework installed</li>
+                        <li>Knowledge: Familiarity with — or willingness to dive deep into — BDD, gherkin, Selenium
+                            WebDriver API, PageObject pattern. Prior experience with test automation.
+                        </li>
+                    </ul>
+
+
+                    <h4>Syllabus</h4>
+                    <a href="https://gist.github.com/mrtns/10081393">https://gist.github.com/mrtns/10081393</a>
+
+                </div>
+                <div class="col-sm-6 workshop-instructor-bio">
+                    <h4>About Martin
+
+                        (<a href="https://twitter.com/mrtn_su">@mrtn_su</a>)
+
+                    </h4>
+
+                    <img class="workshop-instructor-image" src="https://pbs.twimg.com/profile_images/424772720765571073/VUtKxT-r_bigger.jpeg" alt="Martin Suchanek">
+
+                    <p>I'm a multi-disciplined software developer, hacking away at technology, organization, and product
+                        since the first dot com boom (and bust). For some uncanny reason I've found myself wearing all
+                        the possible hats. I've worked in companies from 1 to 300 in size, from positions of sole
+                        proprietor, employee, advisor, and external contractor.</p>
+
+                    <p>I have been practicing BDD in depth for the last five years, at three different
+                        organizations.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<h2>Full Day Workshops</h2>
+
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <a data-toggle="collapse" data-parent="#accordion" href="#workshop-golang">
+            <h3 class="panel-title">Go Bootcamp <span class="panel-title-instructor">with Kamil Kisiel</span></h3>
+        </a>
+    </div>
+    <div id="workshop-golang" class="panel-collapse collapse">
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-sm-6 workshop-abstract">
+                    <h4>Abstract</h4>
+
+                    <p>The Go Bootcamp will cover everything you need to get started writing network and web
+                        applications in Go. The first half of the day be spent learning language fundamentals and best
+                        practices for programming in Go. In the second half participants will use tools available in the
+                        Go standard library to build a networked chat application with a web interface.</p>
+
+                    <h4>Prerequisites</h4>
+                    <ul>
+                        <li>Materials: Bring a laptop with an OS that meets the prerequisties for Golang development
+                            (http://golang.org/doc/install)
+                        </li>
+                    </ul>
+
+
+                    <h4>Syllabus</h4>
+                    <a href="https://docs.google.com/document/d/1lvf8TfvRXQR9pomgwtXM-1YBhVjCVjcc4MKhT8MOmXs/edit?usp=sharing">https://docs.google.com/document/d/1lvf8TfvRXQR9pomgwtXM-1YBhVjCVjcc4MKhT8MOmXs/edit?usp=sharing</a>
+
+                </div>
+                <div class="col-sm-6 workshop-instructor-bio">
+                    <h4>About Kamil
+
+                        (<a href="https://twitter.com/kisielk">@kisielk</a>)
+
+                    </h4>
+
+                    <img class="workshop-instructor-image" src="https://pbs.twimg.com/profile_images/378800000464011954/09f63aa8c86b48e53c3f5e7dcbab02b7_bigger.jpeg" alt="Kamil Kisiel">
+
+                    <p>I have been programming in Go professionally for two years and am currently working as a
+                        freelance developer and consultant. Previously I worked for a biotech startup in ops and
+                        software engineering. I've previously given talks at the SGI User Group Conference, Polyglot,
+                        and several meetup groups.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <a data-toggle="collapse" data-parent="#accordion" href="#workshop-reactjs">
+            <h3 class="panel-title">Welcome to ReactJS <span class="panel-title-instructor">with Steven Luscher</span>
+            </h3>
+        </a>
+    </div>
+    <div id="workshop-reactjs" class="panel-collapse collapse">
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-sm-6 workshop-abstract">
+                    <h4>Abstract</h4>
+
+                    <p>React is a Javascript library for building user interfaces that challenges some fundamental
+                        assumptions about how user interfaces should be built. In this workshop, you will learn to
+                        "think in React," as you build an interactive, data-driven, client-server web application in the
+                        browser.</p>
+
+                    <p>First, we will learn what's distinctive about the React approach, and how we can benefit from it.
+                        Next, we will learn how React components are built, how they operate, how they communicate with
+                        each other, and how to test them. Along the way, in pairs or small groups, we will laugh, cry,
+                        scream, and cheer, but ultimately build some working software, the React Way.</p>
+
+                    <h4>Prerequisites</h4>
+                    <ul>
+                        <li>Materials: Bring a laptop with Chrome and your favorite text editor. For the full
+                            experience, have <a
+                                    href="https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager">Node/NPM
+                                installed</a>.
+                        </li>
+                        <li>Knowledge: You should be familiar with HTML, and one of either Coffeescript or Javascript.
+                        </li>
+                    </ul>
+
+
+                    <h4>Syllabus</h4>
+                    <a href="https://github.com/steveluscher/react-polyglot-conf-2014">https://github.com/steveluscher/react-polyglot-conf-2014</a>
+
+                </div>
+                <div class="col-sm-6 workshop-instructor-bio">
+                    <h4>About Steven
+
+                        (<a href="https://twitter.com/steveluscher">@steveluscher</a>)
+
+                    </h4>
+                    <img class="workshop-instructor-image" src="https://pbs.twimg.com/profile_images/378800000263483745/71b6b5c053358f6daa1eeb1de326f7b8_bigger.png" alt="Steven Luscher">
+
+                    <p>Steven Luscher builds web and mobile applications using HTML, CSS, Javascript, Ruby, and
+                        Objective-C. En-route to becoming a polyglot coder, he made stops along the way to pursue formal
+                        education in graphic design, mathematics, and pedagogy; experiences which have served him well
+                        in the area of web application development.</p>
+
+                    <p>In 2013, he delivered a <a href="https://github.com/steveluscher/react-supervanjs-2013">conference
+                            talk</a> about React at Super VanJS. He currently works full-time developing a mammoth
+                        React-based application using Coffeescript, JSX, Node, and MongoDB.</p>
+
+                    <p>He does not work for Facebook.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <a data-toggle="collapse" data-parent="#accordion" href="#workshop-docker">
+            <h3 class="panel-title">Docker in Depth <span class="panel-title-instructor">with Tavis Rudd</span></h3>
+        </a>
+    </div>
+    <div id="workshop-docker" class="panel-collapse collapse">
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-sm-6 workshop-abstract">
+                    <h4>Abstract</h4>
+
+                    <p><a href="https://www.docker.io/learn_more/">Docker</a> is an open-source engine that automates
+                        the deployment of any application as a lightweight, portable, self-sufficient container that
+                        will run virtually anywhere. Docker containers are both hardware-agnostic and platform-agnostic.
+                        This means that they can run anywhere, from your laptop to the largest EC2 compute instance and
+                        everything in between - and they don't require that you use a particular language, framework or
+                        packaging system. That makes them great building blocks for deploying and scaling web apps,
+                        databases and backend services without depending on a particular stack or provider. Although
+                        it's only a year old, Docker is in the <a href="https://github.com/dotcloud/docker/">top 5
+                            projects on GitHub</a> (ranked by either Stars or activity)</p>
+
+                    <p>This full day lab will cover Docker in depth: from the basics to advanced use cases. Students
+                        will progress from introductory exercises on individual containers to creating, monitoring and
+                        troubleshooting larger systems with clusters of interlinked containers. You will leave with the
+                        skills and confidence to use Docker in a wide range of settings.</p>
+
+                    <p>Students should come with a laptop, a text editor, and at least intermediate <b>Unix</b> system
+                        administration knowledge and command line skills. The exercises themselves will be performed on
+                        EC2 so no additional software is required. If you're not already familiar with Bash and basic
+                        Python, please do some self study first.</p>
+
+                    <h4>Prerequisites</h4>
+                    <ul>
+                        <li>Materials: A laptop and your favourite text editor, EC2 will be used as the actual work
+                            environment.
+                        </li>
+                        <li>Knowledge: Unix systems administration, Bash and basic Python.</li>
+                    </ul>
+
+
+                    <h4>Syllabus</h4>
+                    <a href="https://github.com/tavisrudd/polyglot-docker-tutorial">https://github.com/tavisrudd/polyglot-docker-tutorial</a>
+
+                </div>
+                <div class="col-sm-6 workshop-instructor-bio">
+                    <h4>About Tavis
+
+                        (<a href="https://twitter.com/tavisrudd">@tavisrudd</a>)
+
+                    </h4>
+                    <img class="workshop-instructor-image" src="https://pbs.twimg.com/profile_images/2097861909/hat_bigger.jpg" alt="Tavis Rudd">
+
+                    <p>Tavis Rudd (<a href="https://github.com/tavisrudd/">github</a>, <a href="http://lnkd.in/bC3ctfY">linkedin</a>,
+                        <a href="http://www.ohloh.net/people/rankings?show=12217">ohloh</a>) is a well known local
+                        developer and sysadmin who has slowly realized that writing good software is much harder than he
+                        once thought.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <a data-toggle="collapse" data-parent="#accordion" href="#workshop-scala-web">
+            <h3 class="panel-title">Building a Truly Modern Web App/API with Scala and Akka <span
+                        class="panel-title-instructor">with Alex Cruise</span></h3>
+        </a>
+    </div>
+    <div id="workshop-scala-web" class="panel-collapse collapse">
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-sm-6 workshop-abstract">
+                    <h4>Abstract</h4>
+
+                    <p>Web apps and APIs are hugely important parts of modern life, but in many cases, the way they're
+                        built hasn't changed in many years. These older tools make scale-out hard, and the resulting
+                        systems don't always handle failures gracefully. </p>
+
+                    <p>Let's take a deep dive into a technology stack that is designed from the ground up for
+                        productivity, scalability, correctness and fault tolerance, and see how much can be achieved
+                        with surprisingly little code.</p>
+
+                    <h4>Prerequisites</h4>
+                    <ul>
+                        <li>Materials: Laptop (4GB of RAM), 1.6+ JDK already installed and working (i.e. type "javac"
+                            from the command prompt, it works), SBT 0.13.1 and gotten it working with a "hello world"
+                            project (instructions: http://www.scala-sbt.org/release/docs/Getting-Started/Setup.html),
+                            Your favourite Scala IDE/Editor, cURL or equivalent for HTTP testing
+                        </li>
+                        <li>Knowledge: Basics of Scala, specific language features will be covered within the course.
+                            For those wanting a leg up see: http://docs.scala-lang.org/tutorials/ and
+                            http://danielwestheide.com/scala/neophytes.html
+                        </li>
+                    </ul>
+
+
+                    <h4>Syllabus</h4>
+                    <a href="https://docs.google.com/document/d/14WEBW9MZxQ0bjMG4Z4B0lVtMl3CDE4MjujFOkEj2_WM/edit?usp=sharing">https://docs.google.com/document/d/14WEBW9MZxQ0bjMG4Z4B0lVtMl3CDE4MjujFOkEj2_WM/edit?usp=sharing</a>
+
+                </div>
+                <div class="col-sm-6 workshop-instructor-bio">
+                    <h4>About Alex
+
+                        (<a href="https://twitter.com/alexcruise">@alexcruise</a>)
+
+                    </h4>
+                    <img class="workshop-instructor-image" src="https://pbs.twimg.com/profile_images/784997129/myspace_bigger.jpg" alt="Alex Cruise">
+
+                    <p>I've been building software for a disturbingly long time, and felt like I knew what I was doing
+                        until I met Scala and realized how much of the world of computer science I'd been missing.</p>
+
+                    <p>Over the past four years, I've used Scala for all my serious development work, and have
+                        accumulated a tiny bit of wisdom and a lot of humility to go with my battle scars and war
+                        stories.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <a data-toggle="collapse" data-parent="#accordion" href="#workshop-haskell">
+            <h3 class="panel-title">Real World Programming With Haskell <span class="panel-title-instructor">with Roman Gonzalez</span>
+            </h3>
+        </a>
+    </div>
+    <div id="workshop-haskell" class="panel-collapse collapse">
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-sm-6 workshop-abstract">
+                    <h4>Abstract</h4>
+
+                    <p>Participants will tip their toes into the functional programming mindset using Haskell. This is
+                        described by many as a mind-bending experience and a challenging one, covering many concepts of
+                        the functional paradigm like persistent data structures, tail-recursion, Functors, Monads
+                        etc. </p>
+
+                    <p>We'll explore the lazy behavior of the language, and also how to make functions pure (e.g.
+                        enforce avoidance of unintended side effects).</p>
+
+                    <p>We are going to learn the different tools that Haskell provide for concurrent programming, from
+                        Software Transactional Memory, to basic mutable variables.</p>
+
+                    <p>We are going to learn the basics of Parser Combinators, and we will finish it up with the
+                        implementation of a very basic Web app using Scotty, an easy to use Web Framework.</p>
+
+                    <h4>Prerequisites</h4>
+                    <ul>
+                        <li>Materials: This course assumes you use a machine with Linux/MacOS X, you will need to
+                            install the <a href="http://www.haskell.org/platform/">Haskell Platform.</a></li>
+                        <li>Knowledge: This course assumes familiarity with Linux/Unix command line, familiarity with a
+                            programming language that has a REPL (ruby, python, nodejs, scala) will be helpful. Basic
+                            knowledge of programming in Java/C/C++/Ruby/Python is desirable.
+                        </li>
+                    </ul>
+
+
+                </div>
+                <div class="col-sm-6 workshop-instructor-bio">
+                    <h4>About Roman
+
+                        (<a href="https://twitter.com/romanandreg">@romanandreg</a>)
+
+                    </h4>
+
+
+                    <img class="workshop-instructor-image" src="https://pbs.twimg.com/profile_images/794628961/P3060111_bigger.jpeg" alt="Roman Gonzalez">
+
+                    <p>Roman Gonzalez is one of the co-founder of Birdseye Software, he has done many consultancy jobs
+                        in the past using Ruby on Rails, and has lead the development team of a local Startup, he has
+                        participated in many open source projects using Ruby, Clojure, elisp and Haskell. </p>
+
+                    <p>He has been using Haskell for the past 6 years, and has given many tutorials on the Vancouver's
+                        Haskell Meetup where he is one of the main organizers. He also has given presentations in the
+                        Polyglot Meetup and ClojureWest 2013.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <a data-toggle="collapse" data-parent="#accordion" href="#workshop-ios-ui">
+            <h3 class="panel-title">Auto Layout and Storyboards on iOS <span class="panel-title-instructor">with Allen Pike and Nigel Brooke</span>
+            </h3>
+        </a>
+    </div>
+    <div id="workshop-ios-ui" class="panel-collapse collapse">
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-sm-6 workshop-abstract">
+                    <h4>Abstract</h4>
+
+                    <p>Storyboards and Auto Layout are the two primary tools for laying out user interfaces on iOS. With
+                        the new Interface Builder functionality in Xcode 5.1 and the persistent rumours of a larger
+                        iPhone on the horizon, now is the time to level up your Storyboard and Auto Layout skills and
+                        get rid of your app's old manual layout code.</p>
+
+                    <p>Our morning will focus on Storyboards, building out a simple Twitter client using Xcode and
+                        Interface Builder. Then we'll dive into code, with custom Segues and other advanced issues
+                        around Storyboards, paired with a more advanced coding exercise.</p>
+
+                    <p>The afternoon will go deep into Auto Layout, starting with the theory as a refresher before going
+                        into building Auto Layouts in Xcode, highlighting the new Auto Layout tools in Xcode 5.1. After
+                        an exercise in Interface Builder, we'll dig into code, building and debugging more advanced Auto
+                        Layouts, finishing with an Auto Layout torture test exercise.</p>
+
+                    <h4>Prerequisites</h4>
+                    <ul>
+                        <li>Materials: a laptop with Xcode installed.</li>
+                        <li>Knowledge: Basic familiarity with iOS development</li>
+                    </ul>
+
+
+                </div>
+                <div class="col-sm-6 workshop-instructor-bio">
+
+                            <h4>About Allen (<a href="https://twitter.com/apike">@apike</a>) and Nigel (<a href="https://twitter.com/nigelbrooke">@nigelbrooke</a>)</h4>
+                            <img class="workshop-instructor-image" src="https://pbs.twimg.com/profile_images/378800000129684038/a4d53c9371c5d9f71041f5e37a254f91_bigger.jpeg" alt="Allen Pike">
+                            <img class="workshop-instructor-image" src="https://pbs.twimg.com/profile_images/923147006/TwitterHeadshot_bigger.jpg" alt="Nigel Brooke">
+                            <img class="workshop-instructor-image" src="https://pbs.twimg.com/profile_images/3346727321/11fff834667f033fc4cce2ce43465ca9_bigger.jpeg" alt="Steam Clock Software">
+
+                            <p>Steamclock is one of the top iOS development studios in Canada, with a team of mobile developers
+                                focused on great UI and UX, and are organizers of the VanCocoa speaker series on iOS and Mac
+                                development.</p>
+
+                            <p>Allen Pike and Nigel Brooke are seasoned iOS developers who have taught at SFU and University of
+                                Calgary respectively. Prior to founding Steamclock, Allen was a Software Engineer at Apple. You
+                                can see an example of Allen speaking on iOS and JavaScript development at JSConf in Berlin <a
+                                        href="https://www.youtube.com/watch?v=5LUkHss6CAw">here.</a></p>
+
+                            <p>Last year at Polyglot Steamclock put on a less in-depth day-long iOS tutorial, which was well
+                                received.</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</div>
+
+</div>
+</div>
+<h2>Tickets</h2>
+
+<p>Workshop tickets will be available to purchase in early April.</p>
 </div>
