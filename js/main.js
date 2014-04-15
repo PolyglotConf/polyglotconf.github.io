@@ -54,6 +54,44 @@ $(function() {
         });
     };
 
+    var initWorkshopAccordion = function () {
+
+        var removeHash = function() {
+            var scrollV, scrollH, loc = window.location;
+//            if ("pushState" in history)
+//                history.pushState("", document.title, loc.pathname + loc.search);
+//            else {
+                // Prevent scrolling by storing the page's current scroll offset
+                scrollV = document.body.scrollTop;
+                scrollH = document.body.scrollLeft;
+
+                loc.hash = "";
+
+                // Restore the scroll offset, should be flicker free
+                document.body.scrollTop = scrollV;
+                document.body.scrollLeft = scrollH;
+//            }
+        };
+
+        $('#accordion').on('shown.bs.collapse', function() {
+            var expandedPanel = $('.panel-collapse.in');
+            var expandedPanelHeading = expandedPanel.siblings('.panel-heading');
+            var stickyMenuHeight = $('.plglt-nav.affix').height()*1.1;
+            if(expandedPanelHeading.offset().top < $(window).scrollTop()+stickyMenuHeight) {
+                $('html, body').animate({scrollTop: expandedPanelHeading.offset().top - stickyMenuHeight - 10}, 250);
+            }
+        });
+
+        $('#accordion').on('hide.bs.collapse', function() {
+          removeHash();
+        });
+
+        location.hash && $(location.hash + '.collapse').collapse('show');
+    };
+
+
+    initWorkshopAccordion();
+
     enquire.register("screen and (min-width: 992px)", function() {
         initParallax();
     });
@@ -68,12 +106,5 @@ $(function() {
         $(".plglt-index-intro").css({'height':$(window).height()});
     });
 
-    $('#accordion').on('shown.bs.collapse', function() {
-        var expandedPanel = $('.panel-collapse.in');
-        var expandedPanelHeading = expandedPanel.siblings('.panel-heading');
-        var stickyMenuHeight = $('.plglt-nav.affix').height()*1.1;
-        if(expandedPanelHeading.offset().top < $(window).scrollTop()+stickyMenuHeight) {
-            $('html, body').animate({scrollTop: expandedPanelHeading.offset().top - stickyMenuHeight - 10}, 250);
-        }
-    })
+
 });
