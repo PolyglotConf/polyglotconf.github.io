@@ -271,8 +271,9 @@ h2 {
   }
   .sponsor {
     padding: 2% 4%;
-    &.sponsor-mobify {
-      padding-top:3%;
+    @media(max-width: @screen-xs-max) {
+      padding-left: 10px;
+      padding-right: 10px;
     }
   }
 }
