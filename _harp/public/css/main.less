@@ -1,6 +1,7 @@
 @import "_bootstrap/bootstrap";
 
 @plgtl-color-primary: rgb(60, 174, 214);
+@plgtl-color-secondary: #B74F6F;
 @plgtl-color-primary-light: lighten(@plgtl-color-primary, 15%);
 @plgtl-color-primary-lighter: lighten(@plgtl-color-primary, 40%);
 @plgtl-color-primary-dark: darken(@plgtl-color-primary, 15%);
@@ -36,7 +37,7 @@ h1, h2, h3 {
 }
 
 h1 {
-  color: @plgtl-color-primary;
+  color: @plgtl-color-secondary;
 }
 
 h2 {
@@ -46,10 +47,17 @@ h2 {
 .plglt-nav {
   display: relative;
   z-index: 2;
+
+  .navbar-nav>li>a {
+    font-weight: bold;
+    color: @plgtl-color-primary;
+  }
+
   &.navbar-default .navbar-nav>.active>a,
   &.navbar-default .navbar-nav>.active>a:hover,
   &.navbar-default .navbar-nav>.active>a:focus {
     background-color: @plgtl-color-primary-lighter;
+    font-weight: bold;
   }
   .navbar-nav > li {
     float: none;
@@ -63,7 +71,7 @@ h2 {
 
   min-height: 400px;
 
-  background: url(../images/cover.jpg) 50% 0 fixed;
+  background: url(../images/splash/polyglot-bg-03-compressed.png) 50% 0 fixed;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -97,9 +105,9 @@ h2 {
     font-size: 150%;
   }
 
-  @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
-    background-size: 100%;
-  }
+//  @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+//    background-size: 100%;
+//  }
 
   @media(min-width: @screen-sm-min) {
     height: 60%;
@@ -201,13 +209,23 @@ h2 {
 }
 
 .plglt-outro {
-  background-color: @navbar-default-bg;
+  background: url(../images/splash/polyglot-bg-03-compressed.png) 50% 0 fixed;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  color: #f0f0f0;
 }
 
 .plglt-links {
   text-align: center;
   margin-top: 3em;
-  padding-top: 2em;
+  padding-top: 3em;
+  a {
+    color: #fefefe;
+  }
 }
 
 .plglt-footer {
@@ -227,6 +245,10 @@ h2 {
       margin-top:-5px;
       width: 75px;
       height: 28px;
+    }
+
+    .harp-logo {
+      fill:#fff;
     }
   }
 }
