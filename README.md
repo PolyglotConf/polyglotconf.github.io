@@ -23,7 +23,7 @@ harp docs: http://harpjs.com/docs/environment/install
 ## Run the harp server
 
 ```
-sudo harp server _harp -p 80
+harp server _harp -p 8000
 ```
 
 ## Do work
