@@ -1,0 +1,329 @@
+@import "_bootstrap/bootstrap";
+
+@plgtl-color-primary: rgb(60, 174, 214);
+@plgtl-color-secondary: #B74F6F;
+@plgtl-color-primary-light: lighten(@plgtl-color-primary, 15%);
+@plgtl-color-primary-lighter: lighten(@plgtl-color-primary, 40%);
+@plgtl-color-primary-dark: darken(@plgtl-color-primary, 15%);
+
+html, body {
+  height: 100%;
+  min-height: 100%;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: 'Ruda', sans-serif;
+  font-weight: 700;
+}
+
+@media(min-width: @screen-sm-min) {
+  html, body {
+    font-size: 18px;
+    line-height: 1.5em;
+  }
+  h1 {
+    font-size: floor(@font-size-h1 * 1.3);
+  }
+  .plglt-nav {
+    font-size: 14px;
+  }
+}
+
+@media(min-width: @screen-md-min) {
+  .plglt-nav {
+    font-size: 18px;
+  }
+}
+
+h1 {
+  color: @plgtl-color-secondary;
+}
+
+h2 {
+  font-size: 27px;
+}
+
+.plglt-nav {
+  display: relative;
+  z-index: 2;
+
+  .navbar-nav>li>a {
+    font-weight: bold;
+    color: @plgtl-color-primary;
+  }
+
+  &.navbar-default .navbar-nav>.active>a,
+  &.navbar-default .navbar-nav>.active>a:hover,
+  &.navbar-default .navbar-nav>.active>a:focus {
+    background-color: @plgtl-color-primary-lighter;
+    font-weight: bold;
+  }
+  .navbar-nav > li {
+    float: none;
+  }
+  @media(max-width: @screen-xs-max) {
+    display: none;
+  }
+}
+
+.plglt-index-intro {
+
+  min-height: 400px;
+
+  background: url(../images/splash/polyglot-bg-03-compressed.png) 50% 0 fixed;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  color: #fff;
+  text-align: center;
+
+  .container {
+    vertical-align: middle;
+  }
+  .page-header {
+    margin-top: 0;
+    border: 0;
+  }
+
+  .hero-unit {
+    margin-top: 60px;
+  }
+  .plgtl-index-intro-logo {
+    width: 100px;
+    height: 100px;
+    margin: 10px 0 35px 0;
+  }
+
+  h1 {
+    font-size: 200%;
+  }
+  h2 {
+    font-size: 150%;
+  }
+
+//  @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+//    background-size: 100%;
+//  }
+
+  @media(min-width: @screen-sm-min) {
+    height: 60%;
+    min-height: 600px;
+    .plgtl-index-intro-logo {
+      width: 160px;
+      height: 160px;
+      margin: 50px 0 35px 0;
+    }
+    h1 {
+      font-size: 300%;
+    }
+    h2 {
+      font-size: 250%;
+    }
+  }
+
+  h1, h2 {
+    color: #fff;
+    text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #000, 0 4px 0 #000, 0 5px 0 #000, 0 6px 1px rgba(0, 0, 0, .3), 0 0 5px rgba(0, 0, 0, .3), 0 1px 3px rgba(0, 0, 0, .9), 0 3px 5px rgba(0, 0, 0, .6)
+  }
+}
+
+.plglt-nav {
+  .navbar-collapse {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  &.affix {
+    position: fixed;
+    top: 0;
+    width: 100%
+  }
+}
+
+.plglt-section {
+  .container > h1 {
+    margin: @line-height-computed * 3 0 @line-height-computed * 1.5;
+    text-align: center;
+  }
+
+  .container h2 {
+    margin-top: 0.8em;
+    margin-bottom: 0.8em;
+  }
+}
+
+.plglt-conference {
+  h1 > small {
+    display: block;
+  }
+}
+
+.plglt-workshops {
+  h1 > small {
+    display: block;
+  }
+  .workshop-instructor-bio {
+    .workshop-instructor-image {
+      width: 73px;
+      height: 73px;
+      margin: 5px 5px 15px 0;
+      -moz-border-radius: 10px;
+      -webkit-border-radius: 10px;
+      border-radius: 10px
+    }
+  }
+}
+
+.plglt-participants {
+  .plglt-participants-lanyrdattendeelist {
+    padding-bottom: 1.5em;
+  }
+}
+
+.glyphicon-lanyrd {
+  background-image: url(//s3.amazonaws.com/lanyrd-static-hosting/img/icons/flatset/lanyrd-32x32.d33f655e.png);
+  background-size: 16px;
+  min-height: 16px;
+  margin-right: 5px;
+}
+
+.plglt-community {
+  .plglt-community-twitter {
+    > li { text-align: center; }
+  }
+
+  .plglt-organizers {
+    .thumbnail {
+      border: 0;
+      text-align: center;
+      max-width: 100px;
+      margin: 0 auto;
+      .caption {
+        padding: 0;
+      }
+    }
+  }
+}
+
+.plglt-outro {
+  background: url(../images/splash/polyglot-bg-03-compressed.png) 50% 0 fixed;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  color: #f0f0f0;
+}
+
+.plglt-links {
+  text-align: center;
+  margin-top: 3em;
+  padding-top: 3em;
+  a {
+    color: #fefefe;
+  }
+}
+
+.plglt-footer {
+  text-align: center;
+  padding-top: 3em;
+
+  .plgtl-footer-outro-logo {
+    margin: 1em 0 2em 0;
+    width: 30px;
+    height: 30px;
+  }
+  .plglt-outro-harp {
+    padding: 1em 0;
+    .plglt-outro-harp-poweredby {
+    }
+    .plglt-outro-harp-logo {
+      margin-top:-5px;
+      width: 75px;
+      height: 28px;
+    }
+
+    .harp-logo {
+      fill:#fff;
+    }
+  }
+}
+
+.plglt-workshops-schedule {
+  h2 > small {
+    margin-left: 10px;
+  }
+  .panel-heading a {
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  .panel-title-instructor {
+    color: #777;
+  }
+  .workshop-abstract,
+  .workshop-instructor-bio {
+    font-size: @font-size-base;
+    line-height: @line-height-base;
+  }
+}
+
+.workshops-social-heading,
+.workshops-tickets-heading {
+  padding-top: 15px;
+  small {
+    margin-left: 10px;
+  }
+}
+
+.plglt-conduct {
+  .conduct-heading {
+    text-align: center;
+  }
+
+  .conduct-longversion-heading {
+    text-align: center;
+  }
+}
+
+.plglt-venue {
+  .plglt-venue-image {
+    .img-responsive {
+      margin: 0 auto;
+    }
+  }
+  .plglt-venue-map {
+    padding-left: 10px;
+    iframe {
+      width: 100%;
+      height: 250px;
+    }
+  }
+}
+.plglt-sponsors {
+  .sponsors {
+    padding-bottom: 50px;
+
+    h2 {
+      color: gray;
+    }
+  }
+  .sponsors-logos {
+    @media(min-width: @screen-sm-min) {
+      padding-left: 10%;
+      padding-right: 10%;
+    }
+  }
+  
+  .sponsor {
+    padding: 2% 4%;
+    @media(max-width: @screen-xs-max) {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+}
